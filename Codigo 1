@@ -29,16 +29,15 @@ int main() {
     printf("Ingrese el número de busqueda: ");
     scanf("%d", &num_buscar);
 
-    // se utiliza for para hacer el bucle y if para encontrar el numero y realizar una accion si lo encuentra
+
     for (i = 0; i < SIZE; i++) {
         if (array[i] == num_buscar) {
             printf("El numero ingresado fue encontrado en la posición %d\n", i);
-            found = 1; // Indica que el número fue encontrado
+            found = 1; 
             break; 
         }
     }
 
-    // Si el número no fue encontrado
     if (!found) {
         printf("No encontrado\n");
     }
